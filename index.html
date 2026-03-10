@@ -15,17 +15,17 @@
 
 body{
 font-family:'Poppins',sans-serif;
-background:#f6fbff;
+background:#f5f9ff;
 }
 
 /* HERO */
 
 .hero{
 background:linear-gradient(rgba(0,0,0,.55),rgba(0,0,0,.55)),
-url("https://picsum.photos/id/1056/1920/1080");
+url("https://picsum.photos/id/1018/1920/1080");
 background-size:cover;
 background-position:center;
-height:85vh;
+height:90vh;
 display:flex;
 align-items:center;
 justify-content:center;
@@ -34,85 +34,79 @@ color:white;
 }
 
 .hero h1{
-font-size:65px;
+font-size:72px;
 font-weight:700;
 }
 
-.hero-buttons button{
+.hero p{
+font-size:22px;
+}
+
+.hero button{
 margin:10px;
 }
 
-/* SECTION COLORS */
+/* SECTION */
 
 .section{
-padding:90px 0;
+padding:100px 0;
 }
 
-.disney-section{
-background:#e8f4ff;
-}
+/* DESTINATION CARDS */
 
-.gallery-section{
-background:#f0fff6;
-}
-
-/* CARDS */
-
-.card{
-border:none;
-border-radius:12px;
+.destination{
+background:white;
+border-radius:15px;
+overflow:hidden;
 transition:.3s;
 }
 
-.card:hover{
+.destination:hover{
 transform:translateY(-10px);
-box-shadow:0 20px 40px rgba(0,0,0,.15);
+box-shadow:0 25px 45px rgba(0,0,0,.15);
 }
 
-.card img{
-height:230px;
-object-fit:cover;
+.destination img{
 width:100%;
+height:240px;
+object-fit:cover;
 }
 
-/* ICON BOX */
+/* COLOR SECTIONS */
 
-.icon-box{
+.disney{
+background:#e9f3ff;
+}
+
+.cruise{
+background:#eafaf5;
+}
+
+/* FEATURES */
+
+.feature{
 text-align:center;
 padding:20px;
 }
 
-.icon{
+.feature i{
 font-size:40px;
 margin-bottom:10px;
-}
-
-/* GALLERY */
-
-.gallery img{
-border-radius:10px;
-transition:.3s;
-width:100%;
-}
-
-.gallery img:hover{
-transform:scale(1.05);
 }
 
 /* CTA */
 
 .cta{
-background:#ffcc00;
-color:#000;
-padding:70px;
-border-radius:12px;
+background:#ffd84d;
+padding:80px;
 text-align:center;
+border-radius:15px;
 }
 
 /* FOOTER */
 
 footer{
-background:#1b1b1b;
+background:#1a1a1a;
 color:white;
 padding:60px 0;
 }
@@ -123,17 +117,19 @@ padding:60px 0;
 
 <body>
 
-<nav class="navbar navbar-expand-lg navbar-dark bg-primary sticky-top">
+<nav class="navbar navbar-expand-lg navbar-dark bg-primary">
 
 <div class="container">
 
 <a class="navbar-brand fw-bold">H&K Getaways</a>
 
 <div>
+
 <a class="nav-link d-inline text-white">Home</a>
 <a class="nav-link d-inline text-white">Disney</a>
 <a class="nav-link d-inline text-white">Cruises</a>
 <a class="nav-link d-inline text-white">Contact</a>
+
 </div>
 
 </div>
@@ -144,85 +140,13 @@ padding:60px 0;
 
 <div>
 
-<h1>Plan Your Dream Vacation</h1>
+<h1>Dream Vacations Start Here</h1>
 
 <p>Disney & Cruise Vacation Specialists</p>
 
-<div class="hero-buttons">
+<button class="btn btn-warning btn-lg">Plan My Trip</button>
 
-<button class="btn btn-warning btn-lg">
-Get Free Quote
-</button>
-
-<button class="btn btn-light btn-lg">
-Explore Trips
-</button>
-
-</div>
-
-</div>
-
-</div>
-
-<div class="container section disney-section">
-
-<h2 class="text-center mb-5">What We Specialize In</h2>
-
-<div class="row g-4">
-
-<div class="col-md-4">
-
-<div class="card shadow">
-
-<img src="https://picsum.photos/id/1074/800/600">
-
-<div class="card-body">
-
-<h4>Disney Vacations</h4>
-
-<p>Magical theme park trips and unforgettable family memories.</p>
-
-</div>
-
-</div>
-
-</div>
-
-<div class="col-md-4">
-
-<div class="card shadow">
-
-<img src="https://picsum.photos/id/1011/800/600">
-
-<div class="card-body">
-
-<h4>Cruise Vacations</h4>
-
-<p>Sail incredible destinations across the Caribbean and beyond.</p>
-
-</div>
-
-</div>
-
-</div>
-
-<div class="col-md-4">
-
-<div class="card shadow">
-
-<img src="https://picsum.photos/id/1043/800/600">
-
-<div class="card-body">
-
-<h4>Stress-Free Planning</h4>
-
-<p>We handle the details so you can relax and enjoy your trip.</p>
-
-</div>
-
-</div>
-
-</div>
+<button class="btn btn-light btn-lg">Explore Destinations</button>
 
 </div>
 
@@ -230,64 +154,100 @@ Explore Trips
 
 <div class="container section">
 
-<h2 class="text-center mb-5">Why Travel With H&K Getaways</h2>
+<h2 class="text-center mb-5">Popular Vacation Types</h2>
+
+<div class="row g-4">
+
+<div class="col-md-4">
+
+<div class="destination">
+
+<img src="https://picsum.photos/id/1040/800/600">
+
+<div class="p-4">
+
+<h4>Disney Vacations</h4>
+
+<p>Magical theme park trips for families and couples.</p>
+
+</div>
+
+</div>
+
+</div>
+
+<div class="col-md-4">
+
+<div class="destination">
+
+<img src="https://picsum.photos/id/1011/800/600">
+
+<div class="p-4">
+
+<h4>Cruise Adventures</h4>
+
+<p>Explore tropical destinations by luxury cruise ship.</p>
+
+</div>
+
+</div>
+
+</div>
+
+<div class="col-md-4">
+
+<div class="destination">
+
+<img src="https://picsum.photos/id/1035/800/600">
+
+<div class="p-4">
+
+<h4>Family Getaways</h4>
+
+<p>Create unforgettable memories with your family.</p>
+
+</div>
+
+</div>
+
+</div>
+
+</div>
+
+</div>
+
+<div class="section disney">
+
+<div class="container">
+
+<h2 class="text-center mb-5">Why Families Choose Us</h2>
 
 <div class="row">
 
-<div class="col-md-4 icon-box">
+<div class="col-md-4 feature">
 
-<div class="icon">🎢</div>
-
-<h5>Disney Specialists</h5>
+<h4>🎢 Disney Experts</h4>
 
 <p>We specialize in planning magical Disney vacations.</p>
 
 </div>
 
-<div class="col-md-4 icon-box">
+<div class="col-md-4 feature">
 
-<div class="icon">🚢</div>
+<h4>🚢 Cruise Specialists</h4>
 
-<h5>Cruise Experts</h5>
-
-<p>We help you find the perfect cruise for your dream getaway.</p>
+<p>Find the perfect cruise for your dream getaway.</p>
 
 </div>
 
-<div class="col-md-4 icon-box">
+<div class="col-md-4 feature">
 
-<div class="icon">✨</div>
+<h4>✨ Personalized Trips</h4>
 
-<h5>Personalized Trips</h5>
-
-<p>Your trip is tailored to your style, schedule, and budget.</p>
+<p>Your vacation is customized just for you.</p>
 
 </div>
 
-</div>
-
-</div>
-
-<div class="container section gallery-section">
-
-<h2 class="text-center mb-5">Travel Inspiration</h2>
-
-<div class="row g-4 gallery">
-
-<div class="col-md-3">
-<img src="https://picsum.photos/id/1015/600/400">
-</div>
-
-<div class="col-md-3">
-<img src="https://picsum.photos/id/1025/600/400">
-</div>
-
-<div class="col-md-3">
-<img src="https://picsum.photos/id/1040/600/400">
-</div>
-
-<div class="col-md-3">
-<img src="https://picsum.photos/id/1036/600/400">
 </div>
 
 </div>
@@ -298,14 +258,18 @@ Explore Trips
 
 <div class="cta">
 
-<h2>Start Planning Your Dream Vacation</h2>
+<h2>Ready to Start Your Vacation?</h2>
 
 <p class="mb-4">
-Request a free quote and let us plan your perfect Disney or cruise getaway.
+
+Request a free quote and we’ll help you plan the perfect trip.
+
 </p>
 
 <button class="btn btn-dark btn-lg">
+
 Get Your Free Quote
+
 </button>
 
 </div>
@@ -322,7 +286,7 @@ Get Your Free Quote
 
 <h4>H&K Getaways</h4>
 
-<p>Disney & Cruise vacation specialists helping families plan unforgettable trips.</p>
+<p>Disney and cruise vacation specialists helping families travel stress-free.</p>
 
 </div>
 
