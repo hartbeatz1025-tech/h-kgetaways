@@ -1,97 +1,32 @@
 <!DOCTYPE html>
 <html>
 <head>
+
 <title>H&K Getaways</title>
+
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
 
 <style>
 
-body{
-margin:0;
-font-family:Arial;
-background:#f5f7fb;
-}
-
-nav{
-background:#0b3d91;
-display:flex;
-justify-content:space-between;
-align-items:center;
-padding:15px 30px;
-color:white;
-}
-
-nav img{
-height:40px;
-}
-
-nav a{
-color:white;
-text-decoration:none;
-margin-left:20px;
-font-weight:bold;
-}
-
 .hero{
-background-image:url('https://images.unsplash.com/photo-1595152772835-219674b2a8a6');
+background-image:url('https://images.unsplash.com/photo-1575089776834-8be34696ff53');
 background-size:cover;
 background-position:center;
-padding:200px 20px;
+height:90vh;
+display:flex;
+align-items:center;
+justify-content:center;
 text-align:center;
 color:white;
 }
 
 .hero h1{
-font-size:60px;
-margin:0;
-}
-
-.hero p{
-font-size:24px;
-margin-top:10px;
-}
-
-.hero button{
-margin-top:25px;
-background:#ffd24d;
-border:none;
-padding:15px 25px;
-font-size:18px;
-border-radius:6px;
-cursor:pointer;
+font-size:70px;
+font-weight:bold;
 }
 
 .section{
-max-width:1100px;
-margin:auto;
-padding:70px 20px;
-}
-
-.two-col{
-display:flex;
-flex-wrap:wrap;
-gap:40px;
-align-items:center;
-}
-
-.two-col img{
-width:100%;
-border-radius:10px;
-}
-
-.text{
-flex:1;
-min-width:300px;
-}
-
-.image{
-flex:1;
-min-width:300px;
-}
-
-.gallery{
-display:grid;
-grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
-gap:20px;
+padding:80px 0;
 }
 
 .gallery img{
@@ -99,38 +34,10 @@ width:100%;
 border-radius:10px;
 }
 
-form{
-background:white;
-padding:30px;
+.quote{
+background:#f5f5f5;
+padding:60px;
 border-radius:10px;
-box-shadow:0 5px 15px rgba(0,0,0,0.1);
-max-width:500px;
-margin:auto;
-}
-
-input,textarea{
-width:100%;
-padding:12px;
-margin:10px 0;
-border-radius:6px;
-border:1px solid #ccc;
-}
-
-button{
-background:#0b3d91;
-color:white;
-padding:14px 22px;
-border:none;
-border-radius:6px;
-font-size:16px;
-cursor:pointer;
-}
-
-footer{
-background:#222;
-color:white;
-text-align:center;
-padding:30px;
 }
 
 </style>
@@ -139,65 +46,75 @@ padding:30px;
 
 <body>
 
-<nav>
+<nav class="navbar navbar-expand-lg navbar-dark bg-primary">
 
-<h2>H&K Getaways</h2>
+<div class="container">
+
+<a class="navbar-brand fw-bold" href="#">H&K Getaways</a>
 
 <div>
-<a href="#">Home</a>
-<a href="#">Disney Vacations</a>
-<a href="#">Cruises</a>
-<a href="#">Contact</a>
+
+<a class="nav-link d-inline text-white" href="#">Home</a>
+<a class="nav-link d-inline text-white" href="#">Disney Vacations</a>
+<a class="nav-link d-inline text-white" href="#">Cruises</a>
+<a class="nav-link d-inline text-white" href="#">Contact</a>
+
+</div>
+
 </div>
 
 </nav>
 
 <div class="hero">
 
+<div>
+
 <h1>Plan Your Dream Vacation</h1>
 
-<p>Disney & Cruise Vacation Specialists</p>
+<p class="lead">Disney & Cruise Vacation Specialists</p>
 
-<button>Request a Free Quote</button>
+<button class="btn btn-warning btn-lg mt-3">Request Free Quote</button>
 
 </div>
 
-<div class="section">
+</div>
 
-<div class="two-col">
+<div class="container section">
 
-<div class="text">
+<div class="row align-items-center">
+
+<div class="col-md-6">
 
 <h2>Disney Vacations</h2>
 
 <p>
-We help families plan magical Disney vacations including Walt Disney World,
-Disneyland, and Disney Cruise Line trips.
+We help families plan magical Disney vacations including
+Walt Disney World, Disneyland and Disney Cruise Line trips.
 </p>
 
 </div>
 
-<div class="image">
+<div class="col-md-6">
 
-<img src="https://images.unsplash.com/photo-1582719478250-c89cae4dc85b">
-
-</div>
+<img class="img-fluid rounded" src="https://images.unsplash.com/photo-1582719478250-c89cae4dc85b">
 
 </div>
 
 </div>
 
-<div class="section">
+</div>
 
-<div class="two-col">
+<div class="container section">
 
-<div class="image">
+<div class="row align-items-center">
 
-<img src="https://images.unsplash.com/photo-1500375592092-40eb2168fd21">
+<div class="col-md-6">
+
+<img class="img-fluid rounded" src="https://images.unsplash.com/photo-1500375592092-40eb2168fd21">
 
 </div>
 
-<div class="text">
+<div class="col-md-6">
 
 <h2>Cruise Vacations</h2>
 
@@ -212,47 +129,44 @@ We help you find the perfect cruise for your family.
 
 </div>
 
-<div class="section">
+<div class="container section">
 
-<h2 style="text-align:center;">Travel Inspiration</h2>
+<h2 class="text-center mb-5">Travel Inspiration</h2>
 
-<div class="gallery">
+<div class="row gallery">
 
-<img src="https://images.unsplash.com/photo-1501785888041-af3ef285b470">
-<img src="https://images.unsplash.com/photo-1476514525535-07fb3b4ae5f1">
-<img src="https://images.unsplash.com/photo-1507525428034-b723cf961d3e">
-<img src="https://images.unsplash.com/photo-1488646953014-85cb44e25828">
+<div class="col-md-3"><img src="https://images.unsplash.com/photo-1501785888041-af3ef285b470"></div>
+<div class="col-md-3"><img src="https://images.unsplash.com/photo-1476514525535-07fb3b4ae5f1"></div>
+<div class="col-md-3"><img src="https://images.unsplash.com/photo-1507525428034-b723cf961d3e"></div>
+<div class="col-md-3"><img src="https://images.unsplash.com/photo-1488646953014-85cb44e25828"></div>
+
+</div>
+
+</div>
+
+<div class="container section">
+
+<div class="quote text-center">
+
+<h2>Request a Free Quote</h2>
+
+<input class="form-control mt-3" placeholder="Your Name">
+
+<input class="form-control mt-3" placeholder="Email Address">
+
+<input class="form-control mt-3" placeholder="Destination">
+
+<textarea class="form-control mt-3" placeholder="Tell us about your trip"></textarea>
+
+<button class="btn btn-primary mt-3">Submit</button>
 
 </div>
 
 </div>
 
-<div class="section">
+<footer class="bg-dark text-white text-center p-4">
 
-<h2 style="text-align:center;">Request a Free Quote</h2>
-
-<form>
-
-<input type="text" placeholder="Your Name">
-
-<input type="email" placeholder="Email Address">
-
-<input type="text" placeholder="Destination">
-
-<input type="text" placeholder="Travel Dates">
-
-<textarea placeholder="Tell us about your dream trip"></textarea>
-
-<button>Submit</button>
-
-</form>
-
-</div>
-
-<footer>
-
-<p>H&K Getaways</p>
-<p>Disney & Cruise Vacation Planning</p>
+H&K Getaways • Disney & Cruise Vacation Planning
 
 </footer>
 
