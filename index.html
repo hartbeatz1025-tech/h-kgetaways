@@ -2,15 +2,164 @@
 <html>
 <head>
 <title>H&K Getaways</title>
+
+<style>
+
+body{
+font-family: Arial;
+margin:0;
+background:#f4f6fb;
+}
+
+header{
+background:#1e90ff;
+color:white;
+text-align:center;
+padding:60px 20px;
+}
+
+header h1{
+font-size:45px;
+margin:0;
+}
+
+header p{
+font-size:18px;
+}
+
+.section{
+max-width:1000px;
+margin:auto;
+padding:50px 20px;
+}
+
+.cards{
+display:flex;
+flex-wrap:wrap;
+gap:20px;
+}
+
+.card{
+background:white;
+padding:25px;
+border-radius:10px;
+box-shadow:0 5px 15px rgba(0,0,0,0.1);
+flex:1;
+min-width:250px;
+}
+
+form{
+background:white;
+padding:30px;
+border-radius:10px;
+box-shadow:0 5px 15px rgba(0,0,0,0.1);
+max-width:500px;
+margin:auto;
+}
+
+input, textarea{
+width:100%;
+padding:10px;
+margin:10px 0;
+border:1px solid #ccc;
+border-radius:5px;
+}
+
+button{
+background:#1e90ff;
+color:white;
+padding:12px 20px;
+border:none;
+border-radius:6px;
+font-size:16px;
+cursor:pointer;
+}
+
+footer{
+background:#222;
+color:white;
+text-align:center;
+padding:20px;
+margin-top:40px;
+}
+
+</style>
+
 </head>
 
-<body style="font-family:Arial;text-align:center;padding:50px;background:#f4f6fb;">
+<body>
 
-<h1 style="color:#1e90ff;">H&K Getaways</h1>
+<header>
+<h1>H&K Getaways</h1>
+<p>Disney & Cruise Vacation Specialists</p>
+</header>
+
+<div class="section">
+
+<h2 style="text-align:center;">Plan Your Dream Vacation</h2>
+<p style="text-align:center;">
+We help families plan magical Disney trips and unforgettable cruise adventures.
+</p>
+
+</div>
+
+<div class="section">
+
+<div class="cards">
+
+<div class="card">
+<h3>🏰 Disney Vacations</h3>
+<p>
+We help plan trips to Walt Disney World, Disneyland, and Disney Cruise Line.
+</p>
+</div>
+
+<div class="card">
+<h3>🚢 Cruise Vacations</h3>
+<p>
+Caribbean cruises, family cruises, and first-time cruise planning made easy.
+</p>
+</div>
+
+<div class="card">
+<h3>✨ Stress-Free Planning</h3>
+<p>
+From booking to travel tips, we help make your vacation smooth and magical.
+</p>
+</div>
+
+</div>
+
+</div>
+
+<div class="section">
+
+<h2 style="text-align:center;">Request a Free Quote</h2>
+
+<form>
+
+<input type="text" placeholder="Your Name">
+
+<input type="email" placeholder="Email Address">
+
+<input type="text" placeholder="Destination (Disney, Cruise, etc)">
+
+<input type="text" placeholder="Travel Dates">
+
+<textarea placeholder="Tell us about your trip"></textarea>
+
+<button>Submit</button>
+
+</form>
+
+</div>
+
+<footer>
+
+<p>H&K Getaways</p>
 <p>Disney & Cruise Vacation Planning</p>
 
-<h2>Plan Your Dream Vacation</h2>
-<p>We help families plan magical Disney trips and amazing cruise vacations.</p>
+</footer>
 
 </body>
 </html>
