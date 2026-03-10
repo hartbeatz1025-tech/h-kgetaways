@@ -14,13 +14,19 @@
 
 <style>
 
-body{
-font-family:'Poppins', sans-serif;
-background:#f6f8fb;
+html{
+scroll-behavior:smooth;
 }
 
+body{
+font-family:'Poppins',sans-serif;
+background:#f7f9fc;
+}
+
+/* NAVBAR */
+
 .navbar{
-box-shadow:0 3px 15px rgba(0,0,0,0.15);
+box-shadow:0 5px 20px rgba(0,0,0,0.15);
 }
 
 .logo{
@@ -28,11 +34,13 @@ font-weight:700;
 font-size:22px;
 }
 
+/* HERO */
+
 .hero{
 height:90vh;
 background:
-linear-gradient(rgba(0,0,0,.55), rgba(0,0,0,.55)),
-url("https://images.unsplash.com/photo-1507525428034-b723cf961d3e");
+linear-gradient(rgba(0,0,0,.6),rgba(0,0,0,.6)),
+url("https://images.unsplash.com/photo-1506929562872-bb421503ef21");
 background-size:cover;
 background-position:center;
 display:flex;
@@ -49,10 +57,35 @@ font-weight:700;
 
 .hero p{
 font-size:22px;
+margin-top:10px;
 }
+
+.hero button{
+transition:all .3s ease;
+}
+
+.hero button:hover{
+transform:scale(1.1);
+}
+
+/* SECTIONS */
 
 .section{
 padding:90px 0;
+}
+
+/* CARDS */
+
+.card{
+border:none;
+border-radius:14px;
+overflow:hidden;
+transition:all .3s ease;
+}
+
+.card:hover{
+transform:translateY(-10px);
+box-shadow:0 20px 40px rgba(0,0,0,.15);
 }
 
 .card img{
@@ -60,17 +93,37 @@ height:260px;
 object-fit:cover;
 }
 
+/* GALLERY */
+
 .gallery img{
-border-radius:10px;
+border-radius:12px;
+transition:transform .3s ease;
 }
+
+.gallery img:hover{
+transform:scale(1.07);
+}
+
+/* CTA */
 
 .cta{
 background:#0d6efd;
 color:white;
 padding:70px;
-border-radius:12px;
+border-radius:14px;
 text-align:center;
 }
+
+/* FORM */
+
+.form-box{
+background:white;
+padding:50px;
+border-radius:14px;
+box-shadow:0 20px 40px rgba(0,0,0,.1);
+}
+
+/* FOOTER */
 
 footer{
 margin-top:80px;
@@ -87,18 +140,14 @@ margin-top:80px;
 <div class="container">
 
 <div class="logo text-white">
-
-🌴 H&K Getaways
-
+🏰 H&K Getaways
 </div>
 
 <div>
-
-<a class="nav-link d-inline text-white">Home</a>
-<a class="nav-link d-inline text-white">Disney</a>
-<a class="nav-link d-inline text-white">Cruises</a>
-<a class="nav-link d-inline text-white">Contact</a>
-
+<a class="nav-link d-inline text-white" href="#">Home</a>
+<a class="nav-link d-inline text-white" href="#disney">Disney</a>
+<a class="nav-link d-inline text-white" href="#cruise">Cruises</a>
+<a class="nav-link d-inline text-white" href="#quote">Quote</a>
 </div>
 
 </div>
@@ -113,15 +162,17 @@ margin-top:80px;
 
 <p>Disney & Cruise Vacation Specialists</p>
 
+<a href="#quote">
 <button class="btn btn-warning btn-lg mt-3">
 Request Free Quote
 </button>
+</a>
 
 </div>
 
 </div>
 
-<div class="container section">
+<div id="disney" class="container section">
 
 <h2 class="text-center mb-5">Vacation Experiences</h2>
 
@@ -131,7 +182,7 @@ Request Free Quote
 
 <div class="card shadow">
 
-<img src="https://images.unsplash.com/photo-1582719478250-c89cae4dc85b" class="card-img-top">
+<img src="https://images.unsplash.com/photo-1582719478250-c89cae4dc85b">
 
 <div class="card-body">
 
@@ -148,11 +199,11 @@ Disneyland and Disney Cruise Line adventures.
 
 </div>
 
-<div class="col-md-6">
+<div id="cruise" class="col-md-6">
 
 <div class="card shadow">
 
-<img src="https://images.unsplash.com/photo-1548574505-5e239809ee19" class="card-img-top">
+<img src="https://images.unsplash.com/photo-1548574505-5e239809ee19">
 
 <div class="card-body">
 
@@ -177,7 +228,7 @@ and around the world.
 
 <h2 class="text-center mb-5">Travel Inspiration</h2>
 
-<div class="row g-4 gallery">
+<div class="row g-4 gallery justify-content-center">
 
 <div class="col-md-3">
 <img class="img-fluid" src="https://images.unsplash.com/photo-1501785888041-af3ef285b470">
@@ -206,11 +257,35 @@ and around the world.
 <h2>Start Planning Your Dream Vacation</h2>
 
 <p class="mb-4">
-Let us help you plan the perfect Disney or cruise trip.
+Let us help you plan the perfect Disney or cruise getaway.
 </p>
 
+<a href="#quote">
 <button class="btn btn-light btn-lg">
 Get Your Free Quote
+</button>
+</a>
+
+</div>
+
+</div>
+
+<div id="quote" class="container section">
+
+<div class="form-box text-center">
+
+<h2 class="mb-4">Request a Free Quote</h2>
+
+<input class="form-control mt-3" placeholder="Your Name">
+
+<input class="form-control mt-3" placeholder="Email Address">
+
+<input class="form-control mt-3" placeholder="Destination">
+
+<textarea class="form-control mt-3" placeholder="Tell us about your trip"></textarea>
+
+<button class="btn btn-primary mt-3">
+Submit Request
 </button>
 
 </div>
