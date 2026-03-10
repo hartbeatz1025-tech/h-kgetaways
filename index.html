@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
 
 <meta charset="UTF-8">
@@ -7,7 +8,7 @@
 
 <title>H&K Getaways</title>
 
-<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+<link href="https://cdn.jsdelivr.net/npm/bootswatch@5.3.2/dist/lux/bootstrap.min.css" rel="stylesheet">
 
 <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;700&display=swap" rel="stylesheet">
 
@@ -18,12 +19,9 @@ font-family:'Poppins',sans-serif;
 background:#f5f7fb;
 }
 
-.navbar{
-box-shadow:0 4px 15px rgba(0,0,0,0.1);
-}
-
 .hero{
-background:linear-gradient(rgba(0,0,0,.6),rgba(0,0,0,.6)),
+background:
+linear-gradient(rgba(0,0,0,.6),rgba(0,0,0,.6)),
 url("https://images.unsplash.com/photo-1507525428034-b723cf961d3e");
 background-size:cover;
 background-position:center;
@@ -46,6 +44,15 @@ margin:10px;
 
 .section{
 padding:80px 0;
+}
+
+.card{
+transition:all .3s ease;
+}
+
+.card:hover{
+transform:translateY(-10px);
+box-shadow:0 20px 40px rgba(0,0,0,.15);
 }
 
 .card img{
@@ -133,7 +140,7 @@ View Destinations
 
 <div class="col-md-4">
 
-<div class="card shadow">
+<div class="card">
 
 <img src="https://images.unsplash.com/photo-1582719478250-c89cae4dc85b">
 
@@ -141,7 +148,7 @@ View Destinations
 
 <h4>Disney Vacations</h4>
 
-<p>Plan magical trips to Walt Disney World, Disneyland, and Disney Cruise Line.</p>
+<p>Plan magical trips to Walt Disney World, Disneyland and Disney Cruise Line.</p>
 
 </div>
 
@@ -151,7 +158,7 @@ View Destinations
 
 <div class="col-md-4">
 
-<div class="card shadow">
+<div class="card">
 
 <img src="https://images.unsplash.com/photo-1548574505-5e239809ee19">
 
@@ -169,7 +176,7 @@ View Destinations
 
 <div class="col-md-4">
 
-<div class="card shadow">
+<div class="card">
 
 <img src="https://images.unsplash.com/photo-1501785888041-af3ef285b470">
 
@@ -177,7 +184,7 @@ View Destinations
 
 <h4>Stress-Free Planning</h4>
 
-<p>We handle all the details so you can enjoy your vacation.</p>
+<p>We handle the details so you can relax and enjoy your trip.</p>
 
 </div>
 
@@ -195,13 +202,21 @@ View Destinations
 
 <div class="row g-4 gallery">
 
-<div class="col-md-3"><img class="img-fluid" src="https://images.unsplash.com/photo-1476514525535-07fb3b4ae5f1"></div>
+<div class="col-md-3">
+<img class="img-fluid" src="https://images.unsplash.com/photo-1476514525535-07fb3b4ae5f1">
+</div>
 
-<div class="col-md-3"><img class="img-fluid" src="https://images.unsplash.com/photo-1506929562872-bb421503ef21"></div>
+<div class="col-md-3">
+<img class="img-fluid" src="https://images.unsplash.com/photo-1506929562872-bb421503ef21">
+</div>
 
-<div class="col-md-3"><img class="img-fluid" src="https://images.unsplash.com/photo-1488646953014-85cb44e25828"></div>
+<div class="col-md-3">
+<img class="img-fluid" src="https://images.unsplash.com/photo-1488646953014-85cb44e25828">
+</div>
 
-<div class="col-md-3"><img class="img-fluid" src="https://images.unsplash.com/photo-1501785888041-af3ef285b470"></div>
+<div class="col-md-3">
+<img class="img-fluid" src="https://images.unsplash.com/photo-1501785888041-af3ef285b470">
+</div>
 
 </div>
 
@@ -214,12 +229,38 @@ View Destinations
 <h2>Start Planning Your Dream Vacation</h2>
 
 <p class="mb-4">
-Request a free quote and let us plan the perfect Disney or cruise trip.
+Request a free quote and let us plan your perfect Disney or cruise trip.
 </p>
 
 <button class="btn btn-light btn-lg">
 Get Your Free Quote
 </button>
+
+</div>
+
+</div>
+
+<div class="container section">
+
+<h2 class="text-center mb-4">Request a Free Quote</h2>
+
+<div class="row justify-content-center">
+
+<div class="col-md-6">
+
+<input class="form-control mt-3" placeholder="Your Name">
+
+<input class="form-control mt-3" placeholder="Email Address">
+
+<input class="form-control mt-3" placeholder="Destination">
+
+<textarea class="form-control mt-3" placeholder="Tell us about your trip"></textarea>
+
+<button class="btn btn-primary mt-3 w-100">
+Submit Request
+</button>
+
+</div>
 
 </div>
 
