@@ -1,6 +1,5 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
 
 <meta charset="UTF-8">
@@ -14,35 +13,21 @@
 
 <style>
 
-html{
-scroll-behavior:smooth;
-}
-
 body{
 font-family:'Poppins',sans-serif;
-background:#f7f9fc;
+background:#f5f7fb;
 }
-
-/* NAVBAR */
 
 .navbar{
-box-shadow:0 5px 20px rgba(0,0,0,0.15);
+box-shadow:0 4px 15px rgba(0,0,0,0.1);
 }
-
-.logo{
-font-weight:700;
-font-size:22px;
-}
-
-/* HERO */
 
 .hero{
-height:90vh;
-background:
-linear-gradient(rgba(0,0,0,.6),rgba(0,0,0,.6)),
-url("https://images.unsplash.com/photo-1506929562872-bb421503ef21");
+background:linear-gradient(rgba(0,0,0,.6),rgba(0,0,0,.6)),
+url("https://images.unsplash.com/photo-1507525428034-b723cf961d3e");
 background-size:cover;
 background-position:center;
+height:85vh;
 display:flex;
 align-items:center;
 justify-content:center;
@@ -55,78 +40,40 @@ font-size:64px;
 font-weight:700;
 }
 
-.hero p{
-font-size:22px;
-margin-top:10px;
+.hero-buttons button{
+margin:10px;
 }
-
-.hero button{
-transition:all .3s ease;
-}
-
-.hero button:hover{
-transform:scale(1.1);
-}
-
-/* SECTIONS */
 
 .section{
-padding:90px 0;
-}
-
-/* CARDS */
-
-.card{
-border:none;
-border-radius:14px;
-overflow:hidden;
-transition:all .3s ease;
-}
-
-.card:hover{
-transform:translateY(-10px);
-box-shadow:0 20px 40px rgba(0,0,0,.15);
+padding:80px 0;
 }
 
 .card img{
-height:260px;
+height:220px;
 object-fit:cover;
 }
 
-/* GALLERY */
-
 .gallery img{
-border-radius:12px;
+border-radius:10px;
 transition:transform .3s ease;
 }
 
 .gallery img:hover{
-transform:scale(1.07);
+transform:scale(1.05);
 }
-
-/* CTA */
 
 .cta{
 background:#0d6efd;
 color:white;
 padding:70px;
-border-radius:14px;
+border-radius:10px;
 text-align:center;
 }
 
-/* FORM */
-
-.form-box{
-background:white;
-padding:50px;
-border-radius:14px;
-box-shadow:0 20px 40px rgba(0,0,0,.1);
-}
-
-/* FOOTER */
-
 footer{
-margin-top:80px;
+background:#111;
+color:white;
+padding:50px 0;
 }
 
 </style>
@@ -139,15 +86,15 @@ margin-top:80px;
 
 <div class="container">
 
-<div class="logo text-white">
+<a class="navbar-brand fw-bold">
 🏰 H&K Getaways
-</div>
+</a>
 
 <div>
-<a class="nav-link d-inline text-white" href="#">Home</a>
-<a class="nav-link d-inline text-white" href="#disney">Disney</a>
-<a class="nav-link d-inline text-white" href="#cruise">Cruises</a>
-<a class="nav-link d-inline text-white" href="#quote">Quote</a>
+<a class="nav-link d-inline text-white">Home</a>
+<a class="nav-link d-inline text-white">Disney</a>
+<a class="nav-link d-inline text-white">Cruises</a>
+<a class="nav-link d-inline text-white">Contact</a>
 </div>
 
 </div>
@@ -162,23 +109,29 @@ margin-top:80px;
 
 <p>Disney & Cruise Vacation Specialists</p>
 
-<a href="#quote">
-<button class="btn btn-warning btn-lg mt-3">
-Request Free Quote
+<div class="hero-buttons">
+
+<button class="btn btn-warning btn-lg">
+Get Free Quote
 </button>
-</a>
+
+<button class="btn btn-light btn-lg">
+View Destinations
+</button>
 
 </div>
 
 </div>
 
-<div id="disney" class="container section">
+</div>
 
-<h2 class="text-center mb-5">Vacation Experiences</h2>
+<div class="container section">
+
+<h2 class="text-center mb-5">What We Specialize In</h2>
 
 <div class="row g-4">
 
-<div class="col-md-6">
+<div class="col-md-4">
 
 <div class="card shadow">
 
@@ -188,10 +141,7 @@ Request Free Quote
 
 <h4>Disney Vacations</h4>
 
-<p>
-Magical Disney trips including Walt Disney World,
-Disneyland and Disney Cruise Line adventures.
-</p>
+<p>Plan magical trips to Walt Disney World, Disneyland, and Disney Cruise Line.</p>
 
 </div>
 
@@ -199,7 +149,7 @@ Disneyland and Disney Cruise Line adventures.
 
 </div>
 
-<div id="cruise" class="col-md-6">
+<div class="col-md-4">
 
 <div class="card shadow">
 
@@ -209,10 +159,25 @@ Disneyland and Disney Cruise Line adventures.
 
 <h4>Cruise Vacations</h4>
 
-<p>
-Sail incredible destinations across the Caribbean
-and around the world.
-</p>
+<p>Explore incredible cruise destinations across the Caribbean and beyond.</p>
+
+</div>
+
+</div>
+
+</div>
+
+<div class="col-md-4">
+
+<div class="card shadow">
+
+<img src="https://images.unsplash.com/photo-1501785888041-af3ef285b470">
+
+<div class="card-body">
+
+<h4>Stress-Free Planning</h4>
+
+<p>We handle all the details so you can enjoy your vacation.</p>
 
 </div>
 
@@ -228,23 +193,15 @@ and around the world.
 
 <h2 class="text-center mb-5">Travel Inspiration</h2>
 
-<div class="row g-4 gallery justify-content-center">
+<div class="row g-4 gallery">
 
-<div class="col-md-3">
-<img class="img-fluid" src="https://images.unsplash.com/photo-1501785888041-af3ef285b470">
-</div>
+<div class="col-md-3"><img class="img-fluid" src="https://images.unsplash.com/photo-1476514525535-07fb3b4ae5f1"></div>
 
-<div class="col-md-3">
-<img class="img-fluid" src="https://images.unsplash.com/photo-1476514525535-07fb3b4ae5f1">
-</div>
+<div class="col-md-3"><img class="img-fluid" src="https://images.unsplash.com/photo-1506929562872-bb421503ef21"></div>
 
-<div class="col-md-3">
-<img class="img-fluid" src="https://images.unsplash.com/photo-1507525428034-b723cf961d3e">
-</div>
+<div class="col-md-3"><img class="img-fluid" src="https://images.unsplash.com/photo-1488646953014-85cb44e25828"></div>
 
-<div class="col-md-3">
-<img class="img-fluid" src="https://images.unsplash.com/photo-1488646953014-85cb44e25828">
-</div>
+<div class="col-md-3"><img class="img-fluid" src="https://images.unsplash.com/photo-1501785888041-af3ef285b470"></div>
 
 </div>
 
@@ -257,47 +214,55 @@ and around the world.
 <h2>Start Planning Your Dream Vacation</h2>
 
 <p class="mb-4">
-Let us help you plan the perfect Disney or cruise getaway.
+Request a free quote and let us plan the perfect Disney or cruise trip.
 </p>
 
-<a href="#quote">
 <button class="btn btn-light btn-lg">
 Get Your Free Quote
 </button>
-</a>
 
 </div>
 
 </div>
 
-<div id="quote" class="container section">
+<footer>
 
-<div class="form-box text-center">
+<div class="container">
 
-<h2 class="mb-4">Request a Free Quote</h2>
+<div class="row">
 
-<input class="form-control mt-3" placeholder="Your Name">
+<div class="col-md-4">
 
-<input class="form-control mt-3" placeholder="Email Address">
+<h4>H&K Getaways</h4>
 
-<input class="form-control mt-3" placeholder="Destination">
+<p>Disney & Cruise vacation specialists helping families plan unforgettable trips.</p>
 
-<textarea class="form-control mt-3" placeholder="Tell us about your trip"></textarea>
+</div>
 
-<button class="btn btn-primary mt-3">
-Submit Request
-</button>
+<div class="col-md-4">
+
+<h5>Destinations</h5>
+
+<p>Disney Vacations</p>
+<p>Cruises</p>
+<p>Family Trips</p>
+
+</div>
+
+<div class="col-md-4">
+
+<h5>Contact</h5>
+
+<p>Email: info@hkgetaways.com</p>
+<p>Phone: (555) 123-4567</p>
 
 </div>
 
 </div>
 
-<footer class="bg-dark text-white text-center p-4">
-
-H&K Getaways • Disney & Cruise Vacation Planning
+</div>
 
 </footer>
 
 </body>
-
 </html>
