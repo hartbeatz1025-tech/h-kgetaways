@@ -15,8 +15,12 @@ font-family:Arial;
 background:#f5f7fb;
 }
 
+.navbar{
+box-shadow:0 3px 10px rgba(0,0,0,0.1);
+}
+
 .hero{
-background:url("https://images.unsplash.com/photo-1602002418082-dd4caa75c32b") center/cover no-repeat;
+background:url("https://images.unsplash.com/photo-1507525428034-b723cf961d3e") center/cover no-repeat;
 height:85vh;
 display:flex;
 align-items:center;
@@ -41,9 +45,14 @@ border-radius:10px;
 
 .quote{
 background:white;
-padding:50px;
-border-radius:10px;
-box-shadow:0 10px 25px rgba(0,0,0,0.1);
+padding:60px;
+border-radius:12px;
+box-shadow:0 15px 40px rgba(0,0,0,0.15);
+}
+
+.logo{
+height:35px;
+margin-right:10px;
 }
 
 </style>
@@ -52,11 +61,17 @@ box-shadow:0 10px 25px rgba(0,0,0,0.1);
 
 <body>
 
-<nav class="navbar navbar-expand-lg navbar-dark bg-primary">
+<nav class="navbar navbar-expand-lg navbar-dark bg-primary sticky-top">
 
 <div class="container">
 
-<a class="navbar-brand fw-bold">H&K Getaways</a>
+<a class="navbar-brand fw-bold d-flex align-items-center">
+
+<img class="logo" src="https://cdn-icons-png.flaticon.com/512/854/854878.png">
+
+H&K Getaways
+
+</a>
 
 <div>
 
@@ -94,8 +109,8 @@ box-shadow:0 10px 25px rgba(0,0,0,0.1);
 <h2>Disney Vacations</h2>
 
 <p>
-We help families plan magical Disney vacations including Walt Disney World,
-Disneyland and Disney Cruise Line trips.
+We help families plan magical Disney vacations including
+Walt Disney World, Disneyland and Disney Cruise Line trips.
 </p>
 
 </div>
@@ -103,7 +118,7 @@ Disneyland and Disney Cruise Line trips.
 <div class="col-md-6">
 
 <img class="img-fluid rounded"
-src="https://images.unsplash.com/photo-1582719478250-c89cae4dc85b">
+src="https://images.unsplash.com/photo-1569959220744-ff553533f492">
 
 </div>
 
@@ -118,7 +133,7 @@ src="https://images.unsplash.com/photo-1582719478250-c89cae4dc85b">
 <div class="col-md-6">
 
 <img class="img-fluid rounded"
-src="https://images.unsplash.com/photo-1500375592092-40eb2168fd21">
+src="https://images.unsplash.com/photo-1548574505-5e239809ee19">
 
 </div>
 
@@ -127,7 +142,8 @@ src="https://images.unsplash.com/photo-1500375592092-40eb2168fd21">
 <h2>Cruise Vacations</h2>
 
 <p>
-Explore incredible cruise destinations across the Caribbean and beyond.
+Explore incredible cruise destinations across the Caribbean
+and beyond with stress-free planning.
 </p>
 
 </div>
