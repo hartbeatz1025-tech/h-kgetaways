@@ -11,48 +11,61 @@ margin:0;
 background:#f4f6fb;
 }
 
-header{
-background-image:url('https://images.unsplash.com/photo-1506929562872-bb421503ef21');
+.hero{
+background-image:url('https://images.unsplash.com/photo-1507525428034-b723cf961d3e');
 background-size:cover;
 background-position:center;
 color:white;
 text-align:center;
-padding:120px 20px;
+padding:150px 20px;
 }
 
-header h1{
-font-size:50px;
+.hero h1{
+font-size:55px;
 margin:0;
 }
 
-header p{
+.hero p{
 font-size:22px;
 }
 
 .section{
-max-width:1000px;
+max-width:1100px;
 margin:auto;
-padding:50px 20px;
+padding:60px 20px;
 }
 
-.cards{
+.two-col{
 display:flex;
 flex-wrap:wrap;
+align-items:center;
+gap:40px;
+}
+
+.two-col img{
+width:100%;
+border-radius:10px;
+}
+
+.text{
+flex:1;
+min-width:280px;
+}
+
+.image{
+flex:1;
+min-width:280px;
+}
+
+.gallery{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
 gap:20px;
 }
 
-.card{
-background:white;
-padding:20px;
-border-radius:10px;
-box-shadow:0 5px 15px rgba(0,0,0,0.1);
-flex:1;
-min-width:250px;
-}
-
-.card img{
+.gallery img{
 width:100%;
-border-radius:8px;
+border-radius:10px;
 }
 
 form{
@@ -86,7 +99,7 @@ footer{
 background:#222;
 color:white;
 text-align:center;
-padding:20px;
+padding:30px;
 margin-top:40px;
 }
 
@@ -96,41 +109,61 @@ margin-top:40px;
 
 <body>
 
-<header>
+<div class="hero">
 <h1>H&K Getaways</h1>
 <p>Disney & Cruise Vacation Specialists</p>
-</header>
+</div>
 
 <div class="section">
 
-<h2 style="text-align:center;">Plan Your Dream Vacation</h2>
-<p style="text-align:center;">
-We help families plan magical Disney trips and unforgettable cruise adventures.
+<div class="two-col">
+
+<div class="text">
+<h2>Disney Vacations</h2>
+<p>
+We help families plan magical Disney vacations including Walt Disney World,
+Disneyland, and Disney Cruise Line.
 </p>
+</div>
+
+<div class="image">
+<img src="https://images.unsplash.com/photo-1601758177266-bc599de87707">
+</div>
+
+</div>
 
 </div>
 
 <div class="section">
 
-<div class="cards">
+<div class="two-col">
 
-<div class="card">
-<img src="https://images.unsplash.com/photo-1511732351157-1865efcb7b7b">
-<h3>🏰 Disney Vacations</h3>
-<p>We help plan magical trips to Disney parks and Disney cruises.</p>
-</div>
-
-<div class="card">
+<div class="image">
 <img src="https://images.unsplash.com/photo-1500375592092-40eb2168fd21">
-<h3>🚢 Cruise Vacations</h3>
-<p>Explore amazing cruise destinations with stress-free planning.</p>
 </div>
 
-<div class="card">
-<img src="https://images.unsplash.com/photo-1501785888041-af3ef285b470">
-<h3>✨ Stress-Free Planning</h3>
-<p>We handle the details so you can enjoy your trip.</p>
+<div class="text">
+<h2>Cruise Vacations</h2>
+<p>
+Set sail on amazing cruise adventures. We help find the perfect cruise
+for families, couples, and first-time cruisers.
+</p>
 </div>
+
+</div>
+
+</div>
+
+<div class="section">
+
+<h2 style="text-align:center;">Vacation Inspiration</h2>
+
+<div class="gallery">
+
+<img src="https://images.unsplash.com/photo-1501785888041-af3ef285b470">
+<img src="https://images.unsplash.com/photo-1476514525535-07fb3b4ae5f1">
+<img src="https://images.unsplash.com/photo-1506929562872-bb421503ef21">
+<img src="https://images.unsplash.com/photo-1526779259212-756e3c99e4f0">
 
 </div>
 
@@ -146,7 +179,7 @@ We help families plan magical Disney trips and unforgettable cruise adventures.
 
 <input type="email" placeholder="Email Address">
 
-<input type="text" placeholder="Destination (Disney, Cruise, etc)">
+<input type="text" placeholder="Destination">
 
 <input type="text" placeholder="Travel Dates">
 
