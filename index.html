@@ -8,7 +8,6 @@
 <title>H&K Getaways</title>
 
 <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
-
 <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;700&display=swap" rel="stylesheet">
 
 <style>
@@ -20,8 +19,6 @@ font-family:'Poppins',sans-serif;
 background:#f8fbff;
 }
 
-/* NAVBAR */
-
 .navbar{
 background:white;
 box-shadow:0 4px 15px rgba(0,0,0,.08);
@@ -32,12 +29,6 @@ color:#333 !important;
 font-weight:500;
 margin-left:15px;
 }
-
-.nav-link:hover{
-color:#007bff !important;
-}
-
-/* HERO */
 
 .hero{
 background:
@@ -58,8 +49,6 @@ font-size:65px;
 font-weight:700;
 }
 
-/* DESTINATIONS */
-
 .destination{
 position:relative;
 height:400px;
@@ -71,10 +60,7 @@ color:white;
 margin-bottom:40px;
 border-radius:15px;
 overflow:hidden;
-transition:transform .4s ease;
 }
-
-.destination:hover{transform:scale(1.03);}
 
 .destination img{
 position:absolute;
@@ -83,20 +69,13 @@ height:100%;
 object-fit:cover;
 top:0;
 left:0;
-z-index:1;
-transition:transform .4s ease;
 }
-
-.destination:hover img{transform:scale(1.1);}
 
 .destination-overlay{
 position:absolute;
-top:0;
-left:0;
 width:100%;
 height:100%;
 background:rgba(0,0,0,.45);
-z-index:2;
 }
 
 .destination-content{
@@ -104,31 +83,8 @@ position:relative;
 z-index:3;
 }
 
-.destination h2{
-font-size:42px;
-font-weight:700;
-}
-
-.section{padding:100px 0;}
-
-.about-box{
-background:white;
-padding:40px;
-border-radius:15px;
-box-shadow:0 10px 30px rgba(0,0,0,.1);
-}
-
-.why-box{
-background:white;
-padding:30px;
-border-radius:15px;
-box-shadow:0 10px 30px rgba(0,0,0,.08);
-height:100%;
-}
-
-.why-icon{
-font-size:40px;
-margin-bottom:15px;
+.section{
+padding:100px 0;
 }
 
 .form-box{
@@ -142,11 +98,6 @@ footer{
 background:#1b1b1b;
 color:white;
 padding:60px 0;
-}
-
-.footer-title{
-font-weight:600;
-margin-bottom:10px;
 }
 
 </style>
@@ -174,23 +125,16 @@ margin-bottom:10px;
 
 </nav>
 
-<!-- HERO -->
-
 <div class="hero" id="home">
 
 <div>
 
 <h1>Dream Vacations Start Here</h1>
-
 <p>Disney & Cruise Vacation Specialists</p>
 
-<button class="btn btn-warning btn-lg">Plan My Trip</button>
-
 </div>
 
 </div>
-
-<!-- DISNEY DESTINATION -->
 
 <div class="container section">
 
@@ -203,7 +147,6 @@ margin-bottom:10px;
 <div class="destination-content">
 
 <h2>Disney Vacations</h2>
-
 <p>Experience the magic with unforgettable Disney trips.</p>
 
 </div>
@@ -211,68 +154,6 @@ margin-bottom:10px;
 </div>
 
 </div>
-
-<!-- DISNEY PARKS -->
-
-<div class="section" style="background:#eaf4ff">
-
-<div class="container">
-
-<h2 class="text-center mb-5">Plan Your Disney Vacation</h2>
-
-<div class="row g-4 text-center">
-
-<div class="col-md-3">
-
-<div class="why-box">
-
-<h4>Magic Kingdom</h4>
-<p>The most iconic Disney park filled with classic rides and the famous castle.</p>
-
-</div>
-
-</div>
-
-<div class="col-md-3">
-
-<div class="why-box">
-
-<h4>EPCOT</h4>
-<p>Explore world cultures, amazing food, and futuristic attractions.</p>
-
-</div>
-
-</div>
-
-<div class="col-md-3">
-
-<div class="why-box">
-
-<h4>Hollywood Studios</h4>
-<p>Home of Star Wars Galaxy's Edge and thrilling rides.</p>
-
-</div>
-
-</div>
-
-<div class="col-md-3">
-
-<div class="why-box">
-
-<h4>Animal Kingdom</h4>
-<p>Adventure through nature and explore Pandora – The World of Avatar.</p>
-
-</div>
-
-</div>
-
-</div>
-
-</div>
-
-</div>
-
-<!-- CRUISES -->
 
 <div class="container section">
 
@@ -285,7 +166,6 @@ margin-bottom:10px;
 <div class="destination-content">
 
 <h2>Cruise Adventures</h2>
-
 <p>Sail to incredible destinations around the world.</p>
 
 </div>
@@ -301,7 +181,6 @@ margin-bottom:10px;
 <div class="destination-content">
 
 <h2>Family Getaways</h2>
-
 <p>Create unforgettable memories with the people you love.</p>
 
 </div>
@@ -309,42 +188,6 @@ margin-bottom:10px;
 </div>
 
 </div>
-
-<!-- ABOUT -->
-
-<div class="section">
-
-<div class="container">
-
-<div class="row align-items-center">
-
-<div class="col-md-6">
-
-<div class="about-box">
-
-<h2>About H&K Getaways</h2>
-
-<p>Hi! We're <strong>Kenneth and Haley</strong>, the team behind H&K Getaways — and proud parents to our daughter who inspires our love for family travel.</p>
-
-<p>We created H&K Getaways to help families plan magical Disney vacations and amazing cruise adventures without the stress.</p>
-
-</div>
-
-</div>
-
-<div class="col-md-6 text-center">
-
-<img src="myfamily.jpg" style="width:100%; border-radius:15px;">
-
-</div>
-
-</div>
-
-</div>
-
-</div>
-
-<!-- TRIP REQUEST -->
 
 <div class="section">
 
@@ -354,7 +197,9 @@ margin-bottom:10px;
 
 <div class="form-box">
 
-<form action="https://formsubmit.co/YOUR_EMAIL_HERE" method="POST">
+<form action="https://formsubmit.co/hkgetaways2026@gmail.com" method="POST">
+
+<input type="hidden" name="_captcha" value="false">
 
 <div class="row g-3">
 
@@ -368,14 +213,6 @@ margin-bottom:10px;
 
 <div class="col-md-6">
 <input type="text" name="phone" class="form-control" placeholder="Phone Number">
-</div>
-
-<div class="col-md-6">
-<select name="destination" class="form-control">
-<option>Disney Vacation</option>
-<option>Cruise</option>
-<option>Family Vacation</option>
-</select>
 </div>
 
 <div class="col-12">
@@ -400,8 +237,6 @@ Submit Trip Request
 
 </div>
 
-<!-- FOOTER -->
-
 <footer id="contact">
 
 <div class="container">
@@ -409,29 +244,18 @@ Submit Trip Request
 <div class="row">
 
 <div class="col-md-4">
-
-<h5 class="footer-title">H&K Getaways</h5>
-
+<h5>H&K Getaways</h5>
 <p>Disney and Cruise Vacation Specialists.</p>
-
 </div>
 
 <div class="col-md-4">
-
-<h5 class="footer-title">Contact</h5>
-
-<p>📞 Phone: (Your Phone Number)</p>
-<p>📧 Email: your@email.com</p>
-
+<h5>Contact</h5>
+<p>📧 hkgetaways2026@gmail.com</p>
 </div>
 
 <div class="col-md-4">
-
-<h5 class="footer-title">Location</h5>
-
+<h5>Location</h5>
 <p>Louisiana, USA</p>
-<p>Serving travelers nationwide.</p>
-
 </div>
 
 </div>
