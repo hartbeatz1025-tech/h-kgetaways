@@ -141,6 +141,15 @@ font-size:40px;
 margin-bottom:15px;
 }
 
+/* FORM */
+
+.form-box{
+background:white;
+padding:40px;
+border-radius:15px;
+box-shadow:0 10px 30px rgba(0,0,0,.08);
+}
+
 /* CTA */
 
 .cta{
@@ -279,21 +288,15 @@ margin-bottom:10px;
 <h2>About H&K Getaways</h2>
 
 <p>
-
 Hi! We're <strong>Kenneth and Haley</strong>, the team behind H&K Getaways — and proud parents to our daughter who inspires our love for family travel.
-
 </p>
 
 <p>
-
 As a family ourselves, we understand how important vacations are. Some of the best memories in life are made while traveling together.
-
 </p>
 
 <p>
-
 We created H&K Getaways to help families plan magical Disney vacations and amazing cruise adventures without the stress.
-
 </p>
 
 </div>
@@ -376,25 +379,65 @@ Every vacation is customized around your family's needs.
 
 </div>
 
-<!-- CTA -->
+<!-- TRIP REQUEST FORM -->
 
-<div class="container section">
+<div class="section">
 
-<div class="cta">
+<div class="container">
 
-<h2>Ready to Plan Your Vacation?</h2>
+<h2 class="text-center mb-5">Start Planning Your Vacation</h2>
 
-<p class="mb-4">
+<div class="form-box">
 
-Request a free quote and let us help you plan the perfect trip.
+<form action="https://formsubmit.co/YOUR_EMAIL_HERE" method="POST">
 
-</p>
+<div class="row g-3">
 
-<button class="btn btn-dark btn-lg">
+<div class="col-md-6">
+<input type="text" name="name" class="form-control" placeholder="Your Name" required>
+</div>
 
-Get Your Free Quote
+<div class="col-md-6">
+<input type="email" name="email" class="form-control" placeholder="Email Address" required>
+</div>
 
+<div class="col-md-6">
+<input type="text" name="phone" class="form-control" placeholder="Phone Number">
+</div>
+
+<div class="col-md-6">
+<select name="destination" class="form-control">
+<option>Disney Vacation</option>
+<option>Cruise</option>
+<option>Family Vacation</option>
+</select>
+</div>
+
+<div class="col-md-6">
+<input type="text" name="dates" class="form-control" placeholder="Travel Dates">
+</div>
+
+<div class="col-md-6">
+<input type="number" name="travelers" class="form-control" placeholder="Number of Travelers">
+</div>
+
+<div class="col-12">
+<textarea name="message" class="form-control" rows="4" placeholder="Tell us about your dream vacation"></textarea>
+</div>
+
+<div class="col-12 text-center">
+
+<button type="submit" class="btn btn-warning btn-lg">
+Submit Trip Request
 </button>
+
+</div>
+
+</div>
+
+</form>
+
+</div>
 
 </div>
 
