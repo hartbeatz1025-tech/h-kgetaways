@@ -13,6 +13,10 @@
 
 <style>
 
+html{
+scroll-behavior:smooth;
+}
+
 body{
 font-family:'Poppins',sans-serif;
 background:#f8fbff;
@@ -111,8 +115,6 @@ font-size:42px;
 font-weight:700;
 }
 
-/* SECTIONS */
-
 .section{
 padding:100px 0;
 }
@@ -150,15 +152,6 @@ border-radius:15px;
 box-shadow:0 10px 30px rgba(0,0,0,.08);
 }
 
-/* CTA */
-
-.cta{
-background:linear-gradient(90deg,#ffd84d,#ffb400);
-padding:80px;
-border-radius:20px;
-text-align:center;
-}
-
 /* FOOTER */
 
 footer{
@@ -182,15 +175,15 @@ margin-bottom:10px;
 
 <div class="container">
 
-<a class="navbar-brand" href="#">
+<a class="navbar-brand" href="#home">
 <img src="hklogo.png" style="height:85px;">
 </a>
 
 <div>
-<a class="nav-link d-inline">Home</a>
-<a class="nav-link d-inline">Disney</a>
-<a class="nav-link d-inline">Cruises</a>
-<a class="nav-link d-inline">Contact</a>
+<a class="nav-link d-inline" href="#home">Home</a>
+<a class="nav-link d-inline" href="#disney">Disney</a>
+<a class="nav-link d-inline" href="#cruises">Cruises</a>
+<a class="nav-link d-inline" href="#contact">Contact</a>
 </div>
 
 </div>
@@ -199,7 +192,7 @@ margin-bottom:10px;
 
 <!-- HERO -->
 
-<div class="hero">
+<div class="hero" id="home">
 
 <div>
 
@@ -217,7 +210,7 @@ margin-bottom:10px;
 
 <div class="container section">
 
-<div class="destination">
+<div class="destination" id="disney">
 
 <img src="cinderella-castle.jpg">
 
@@ -235,7 +228,7 @@ margin-bottom:10px;
 
 </div>
 
-<div class="destination">
+<div class="destination" id="cruises">
 
 <img src="cruise.jpg">
 
@@ -445,7 +438,7 @@ Submit Trip Request
 
 <!-- FOOTER -->
 
-<footer>
+<footer id="contact">
 
 <div class="container">
 
