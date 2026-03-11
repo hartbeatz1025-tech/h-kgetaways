@@ -196,8 +196,6 @@ padding:60px 0;
 
 </div>
 
-<!-- ABOUT SECTION -->
-
 <div class="section">
 
 <div class="container">
@@ -215,7 +213,7 @@ Hi! We're <strong>Kenneth and Haley</strong>, the team behind H&K Getaways — a
 </p>
 
 <p>
-As a family ourselves, we know that the best memories are made when exploring the world together. We created H&K Getaways to help other families plan magical Disney vacations, exciting cruises, and unforgettable trips without the stress of planning everything alone.
+We created H&K Getaways to help families plan magical Disney vacations and unforgettable cruises without the stress.
 </p>
 
 </div>
@@ -234,7 +232,27 @@ As a family ourselves, we know that the best memories are made when exploring th
 
 </div>
 
-<!-- FORM -->
+<div class="section" style="background:#eef6ff">
+
+<div class="container text-center">
+
+<h2>Vacation Countdown</h2>
+
+<p>Counting down the days until your dream trip!</p>
+
+<input type="date" id="tripDate" class="form-control w-25 mx-auto">
+
+<br>
+
+<button onclick="calculateDays()" class="btn btn-warning">
+Start Countdown
+</button>
+
+<h3 id="countdownResult" style="margin-top:20px;"></h3>
+
+</div>
+
+</div>
 
 <div class="section">
 
@@ -313,6 +331,24 @@ Submit Trip Request
 </div>
 
 </footer>
+
+<script>
+
+function calculateDays(){
+
+let tripDate = new Date(document.getElementById("tripDate").value);
+let today = new Date();
+
+let difference = tripDate - today;
+
+let days = Math.ceil(difference / (1000 * 60 * 60 * 24));
+
+document.getElementById("countdownResult").innerHTML =
+days + " days until your vacation!";
+
+}
+
+</script>
 
 </body>
 </html>
